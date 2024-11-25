@@ -96,16 +96,90 @@
         gap: 10px; /* Distanza tra righe */
     }
 
-    @media (max-width: 768px) {
-        #keyboard .row {
-            flex-direction: column; /* Disposizione verticale su schermi stretti */
-            align-items: center; /* Centra i pulsanti */
-        }
+    /* Stile generale per i pulsanti */
+    #keyboard button {
+        font-size: 1rem; /* Testo leggibile */
+        padding: 10px; /* Compatta i pulsanti */
+        flex: 1; /* Permette una distribuzione uniforme */
+        max-width: 150px; /* Imposta una larghezza massima */
+    }
 
-        #keyboard button {
-            font-size: 1.5rem; /* Testo ancora più leggibile */
+    #keyboard {
+        display: flex;
+        flex-wrap: wrap; /* Avvolge i pulsanti su più righe */
+        justify-content: center; /* Centra i pulsanti */
+        gap: 10px; /* Spaziatura tra pulsanti */
+    }
+
+    @media (max-width: 768px) {
+        #keyboard {
+            padding: 10px; /* Aggiungi un po' di spazio intorno */
         }
     }
+     /* Stile generale per i pulsanti */
+     #keyboard button {
+        font-size: 1rem; /* Testo leggibile */
+        padding: 10px; /* Compatta i pulsanti */
+        flex: 1; /* Permette una distribuzione uniforme */
+        max-width: 150px; /* Imposta una larghezza massima */
+    }
+
+    #keyboard {
+        display: flex;
+        flex-wrap: wrap; /* Avvolge i pulsanti su più righe */
+        justify-content: center; /* Centra i pulsanti */
+        gap: 10px; /* Spaziatura tra pulsanti */
+    }
+
+    @media (max-width: 768px) {
+        #keyboard {
+            padding: 10px; /* Aggiungi un po' di spazio intorno */
+        }
+    }
+     /* Stile generale per i pulsanti */
+     #keyboard button {
+        font-size: 1rem; /* Testo leggibile */
+        padding: 10px; /* Compatta i pulsanti */
+        flex: 1; /* Permette una distribuzione uniforme */
+        max-width: 150px; /* Imposta una larghezza massima */
+    }
+
+    #keyboard {
+        display: flex;
+        flex-wrap: wrap; /* Avvolge i pulsanti su più righe */
+        justify-content: center; /* Centra i pulsanti */
+        gap: 10px; /* Spaziatura tra pulsanti */
+    }
+
+    @media (max-width: 768px) {
+        #keyboard {
+            padding: 10px; /* Aggiungi un po' di spazio intorno */
+        }
+    }
+    <style>
+    /* Stile generale per i pulsanti */
+    #keyboard button {
+        font-size: 1rem; /* Testo leggibile */
+        padding: 10px; /* Compatta i pulsanti */
+        flex: 1; /* Permette una distribuzione uniforme */
+        max-width: 150px; /* Imposta una larghezza massima */
+    }
+
+    #keyboard {
+        display: flex;
+        flex-wrap: wrap; /* Avvolge i pulsanti su più righe */
+        justify-content: center; /* Centra i pulsanti */
+        gap: 10px; /* Spaziatura tra pulsanti */
+    }
+
+    @media (max-width: 768px) {
+        #keyboard {
+            padding: 10px; /* Aggiungi un po' di spazio intorno */
+        }
+    }
+
+
+
 
         #up,
         #right,
@@ -147,27 +221,13 @@
 
     <!-- Bottoni -->
     <div id="keyboard" class="container">
-    <div class="row">
-        <div class="col-4 d-flex justify-content-center">
-            <button id="right" class="btn btn-secondary w-100">Right</button>
-        </div>
-        <div class="col-4 d-flex justify-content-center">
-            <button id="up" class="btn btn-secondary w-100">Up</button>
-        </div>
-        <div class="col-4 d-flex justify-content-center">
-            <button id="start" class="btn btn-success w-100" style="color: black;">Start</button>
-        </div>
+        <button id="start" class="btn btn-success" style="color: black;">Start</button>
+        <button id="Pause" class="btn btn-warning">Pause</button>
+        <button id="Restart" class="btn btn-danger">Restart</button>
+        <button id="right" class="btn btn-secondary">Right</button>
+        <button id="up" class="btn btn-secondary">Up</button>
     </div>
-    <div class="row mt-2">
-        <div class="col-6 d-flex justify-content-center">
-            <button id="Pause" class="btn btn-warning w-100">Pause</button>
-        </div>
-        <div class="col-6 d-flex justify-content-center">
-            <button id="Restart" class="btn btn-danger w-100">Restart</button>
-        </div>
-    </div>
-</div>
-
+    
     
 
     <!-- Bootstrap JS (Optional for responsive behavior) -->
@@ -285,4 +345,5 @@
 </body>
 
 </html>
+
 
